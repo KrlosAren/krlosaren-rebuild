@@ -1,0 +1,32 @@
+
+.button {
+  align-items: center;
+  color: teal;
+  display: flex;
+  font-size: $font-16;
+  justify-content: center;
+  margin: 2em;
+  text-decoration: none;
+}
+
+.button-primary {
+  border: 2px solid teal;
+  border-bottom: 5px solid teal;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.emoji {
+  @include mixin-emoji(1em);
+}
+
+.linkDecoration {
+  transition: 0.2s;
+
+  &:hover {
+    border-bottom: transparent;
+  }
+}
