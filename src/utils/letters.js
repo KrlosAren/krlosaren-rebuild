@@ -1,4 +1,4 @@
-export const letters = () => {
+const letters = () => {
   const hola = document.querySelectorAll('.content__text span');
   hola[1].classList.toggle('hinge');
   hola[2].classList.toggle('hinge');
@@ -6,3 +6,5 @@ export const letters = () => {
   hola[4].classList.toggle('hinge');
   hola[5].classList.toggle('hinge');
 };
+
+export default letters;

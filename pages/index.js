@@ -4,6 +4,8 @@ import Me from '../src/components/Me/Me';
 import Prologe from '../src/components/Prologe/Prologe';
 
 export default function Home() {
+  console.log(process.env);
+
   return (
     <>
       <Head>

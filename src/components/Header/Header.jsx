@@ -1,4 +1,4 @@
-import { letters } from '../../utils/letters';
+import letters from '../../utils/letters';
 
 const Header = () => {
   return (

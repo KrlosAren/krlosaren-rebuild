@@ -1,4 +1,4 @@
-export const menu = () => {
+const menu = () => {
   const mainContainer = document.getElementById('main__container');
   const menuContainer = document.getElementById('menu');
   const footerContainer = document.getElementById('container__footer');
@@ -8,3 +8,5 @@ export const menu = () => {
   menuContainer.classList.toggle('hiddenMenu');
   footerContainer.classList.toggle('hidden');
 };
+
+export default menu;
