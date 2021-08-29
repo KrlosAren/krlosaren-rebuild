@@ -3,7 +3,7 @@ import Categories from '../../src/components/Categories/Categories';
 import Project from '../../src/components/Project/Project';
 import Spinner from '../../src/components/Spinner/Spinner';
 
-export async function getServerSideProps(context) {
+export async function getStaticProps(context) {
   const ACCESS_TOKEN =
     'c31abf92fdc196e6ec90890f9c1c1e920abd4d190a1a41199fc7d73e65ac05df';
   const res = await fetch(`http://localhost:3000/api/projects`);
