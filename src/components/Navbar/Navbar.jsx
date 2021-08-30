@@ -1,22 +1,17 @@
-import router from 'next/router';
+import Link from 'next/link';
 import menu from '../../utils/menu';
 
 const Navbar = () => {
-  const handleClick = (e) => {
-    e.preventDefault();
-    router.push('/');
-  };
-
   return (
     <div className='nav__header' id='navigator'>
-      <span>
-        <div onClick={handleClick}>
+      <Link href='/'>
+        <a>
           <img
             src='https://storage.googleapis.com/krlosaren-portafolio/images/icon_page.svg'
             alt='home'
           />
-        </div>
-      </span>
+        </a>
+      </Link>
       <span>
         <button id='buttonMenu' type='button' onClick={menu}>
           Menu

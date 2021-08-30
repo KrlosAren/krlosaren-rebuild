@@ -1,4 +1,9 @@
 import Link from 'next/link';
+import GithubIcon from '../../assets/icons/Github/GithubIcon';
+import InstagramIcon from '../../assets/icons/Instagram/InstagramIcon';
+import LinkedIn from '../../assets/icons/LinkedIn/LinkedIn';
+import MailIcon from '../../assets/icons/Mail/MailIcon';
+import TwitterIcon from '../../assets/icons/Twitter/Twitter';
 import menu from '../../utils/menu';
 
 const Menu = () => {
@@ -11,46 +16,31 @@ const Menu = () => {
               href='https://github.com/KrlosAren'
               target='_blank'
               rel='noreferrer'>
-              <img
-                src='https://img.icons8.com/material-outlined/192/16213e/github.png'
-                alt='github'
-              />
+              <GithubIcon />
             </a>
             <a
               href='https://www.linkedin.com/in/carloslopezzavarce/'
               target='_blank'
               rel='noreferrer'>
-              <img
-                src='https://img.icons8.com/ios-glyphs/120/16213e/linkedin-2.png'
-                alt='linkedin'
-              />
+              <LinkedIn />
             </a>
             <a
               href='https://twitter.com/krlosaren'
               target='_blank'
               rel='noreferrer'>
-              <img
-                src='https://img.icons8.com/material/144/16213e/twitter-squared.png'
-                alt='twitter'
-              />
+              <TwitterIcon />
             </a>
             <a
               href='https://www.instagram.com/krlosaren/'
               target='_blank'
               rel='noreferrer'>
-              <img
-                src='https://img.icons8.com/ios/250/16213e/instagram-new.png'
-                alt='instagram'
-              />
+              <InstagramIcon />
             </a>
             <a
               href='mailto:krlosaren@gmail.com'
               target='_blank'
               rel='noreferrer'>
-              <img
-                src='https://img.icons8.com/ios/50/000000/mail.png'
-                alt='mail'
-              />
+              <MailIcon />
             </a>
           </div>
         </div>
