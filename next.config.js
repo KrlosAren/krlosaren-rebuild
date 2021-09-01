@@ -5,6 +5,6 @@ module.exports = {
     includePaths: [path.join(__dirname, 'styles')],
   },
   images: {
-    domains: ['storage.googleapis.com', 'img.icons8.com'],
+    domains: ['storage.googleapis.com', 'img.icons8.com', 'cdn.dribbble.com'],
   },
 };

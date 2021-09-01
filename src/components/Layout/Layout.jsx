@@ -1,16 +1,18 @@
+import { useContext } from 'react';
+import { UIContext } from '../../context/UIContext';
 import Footer from '../Footer/Footer';
 import Menu from '../Menu/Menu';
 import Navbar from '../Navbar/Navbar';
 
 const Layout = ({ children }) => {
-  const icon =
-    'https://storage.googleapis.com/krlosaren-portafolio/images/icon_page.svg';
+  const { uiState } = useContext(UIContext);
+
   return (
     <>
       <Navbar />
-      <Menu />
-      {children}
-      <Footer />
+      <Menu isVisible={uiState} />
+      {!uiState && children}
+      <Footer isVisible={uiState} />
     </>
   );
 };

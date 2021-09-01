@@ -13,14 +13,14 @@
   border: 1px solid rgba(0, 0, 0, 0.103);
   box-shadow: 0 1px 3px -2px rgb(211, 211, 211);
   display: grid;
-  grid-template-rows: 10% 45% 45%;
+  grid-template-rows: 1fr 200px 45%;
 
   &__title {
     @include mixin-center-content;
 
     background-color: rgba(0, 128, 128, 0.589);
     grid-row: 1/2;
-    height: 50px;
+    // height: 50px;
     justify-content: flex-start;
     padding: 1em;
     width: 100%;

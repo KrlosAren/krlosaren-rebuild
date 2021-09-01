@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const Project = ({
   status,
   repoUrl,
@@ -18,8 +20,16 @@ const Project = ({
       <div className='project__title'>
         <h4>{title}</h4>
       </div>
-      <div className='project__header'>
-        <img src={img} alt={title} />
+      <div
+        className='project__header'
+        style={{ width: '100%', height: 'auto', position: 'relative' }}>
+        <Image
+          src={img}
+          alt={title}
+          layout='fill'
+          objectFit='cover'
+          quality={100}
+        />
       </div>
       {show ? (
         <div className='project__info'>

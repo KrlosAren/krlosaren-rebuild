@@ -104,7 +104,7 @@ const Projects = ({ projects, dribbble }) => {
             {!mapDribbble ? (
               <Spinner />
             ) : (
-              <Categories title='Design - Daily UI' page='design'>
+              <Categories title='Design' page='design'>
                 {mapDribbble?.map((dribbble) => (
                   <Project
                     key={dribbble.id}

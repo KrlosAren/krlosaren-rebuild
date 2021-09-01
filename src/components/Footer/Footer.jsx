@@ -1,20 +1,24 @@
-const Footer = () => {
+const Footer = ({ isVisible }) => {
   return (
-    <div id='container__footer'>
-      <footer className='footer' id='footer'>
-        <p>
-          &copy; 2020 Hecho con{' '}
-          <a
-            href='https://github.com/KrlosAren'
-            rel='noreferrer'
-            target='_blank'>
-            <span role='img' aria-label='palm'>
-              🌴
-            </span>
-          </a>
-        </p>
-      </footer>
-    </div>
+    <>
+      {!isVisible && (
+        <div id='container__footer'>
+          <footer className='footer' id='footer'>
+            <p>
+              &copy; 2020 Hecho con{' '}
+              <a
+                href='https://github.com/KrlosAren'
+                rel='noreferrer'
+                target='_blank'>
+                <span role='img' aria-label='palm'>
+                  🌴
+                </span>
+              </a>
+            </p>
+          </footer>
+        </div>
+      )}
+    </>
   );
 };
 

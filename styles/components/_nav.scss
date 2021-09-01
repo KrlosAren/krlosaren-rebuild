@@ -12,9 +12,11 @@
   padding: 0 7em;
   position: fixed;
   // position: absolute;
-  top: 4em;
+  // top: 4em;
   width: 100%;
   z-index: 1000;
+  top: 0;
+  background-color: white;
 
   img {
     height: 80px;
@@ -33,5 +35,12 @@
       border: 1px dashed #16213e;
       cursor: pointer;
     }
+  }
+}
+
+
+.nav__rrss--line {
+  a {
+    margin: 0 1em;
   }
 }

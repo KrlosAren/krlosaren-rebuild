@@ -1,17 +1,23 @@
 import Head from 'next/head';
-import { useContext } from 'react';
-import Header from '../src/components/Header/Header';
-import Me from '../src/components/Me/Me';
-import Prologe from '../src/components/Prologe/Prologe';
-import { UIContext } from '../src/context/UIContext';
+import BlogCard from '../../src/components/BlogCard/BlogCard';
 
-export default function Home() {
-  const { uiState } = useContext(UIContext);
+const MakeSimple = () => {
+  const { title, content, url, images } = {
+    title: 'Mini Retos para Intentar',
+    content:
+      "Mini Retos para Intentar','Cambiar de área de conocimiento no siempre es sencillo,\
+              salir de la zona de confort no resulta un paso fácil.Este es mi caso, soy arquitecto de profesión,\
+              pero con ganas de trabajar en tecnología.', 'Cuando das tus primeros pasos en programación puede ser abrumador,\
+              Backend, Frontend, Base de Datos, PHP, JavaScript, Dockers, DevOps\
+              y otros términos que parecerían imposibles de entender.Tranquilo solo respira y sigue leyendo.",
+    url: 'mini-retos-para-intentar',
+    images: '../assets/images',
+  };
 
   return (
     <>
       <Head>
-        <title>Krlosaren | Home </title>
+        <title>Krlosaren | MakeSimple </title>
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:site' content='@krlosaren' />
         <meta name='twitter:creator' content='@krlosaren' />
@@ -44,17 +50,22 @@ export default function Home() {
         <meta property='og:locale' content='es_ES' />
         <meta property='og:type' content='article' />
         <meta property='fb:app_id' content='788028837' />
-        <meta
-          name='description'
-          content='Carlos Lopez portafolio frontend developer and backend developer'
-        />
-        <link rel='icon' href='/favicon.ico' />
       </Head>
       <div id='main__container'>
-        <Header />
-        <Prologe />
-        <Me />
+        <main className='main' id='main__container'>
+          <h3>Make It Simple</h3>
+          <div className='main__blog'>
+            <BlogCard
+              content={content}
+              title={title}
+              url={url}
+              images={images}
+            />
+          </div>
+        </main>
       </div>
     </>
   );
-}
+};
+
+export default MakeSimple;

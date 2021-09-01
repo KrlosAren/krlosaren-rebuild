@@ -1,5 +1,4 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document';
-import Layout from '../src/components/Layout/Layout';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -26,10 +25,8 @@ class MyDocument extends Document {
           />
         </Head>
         <body>
-          <Layout>
-            <Main />
-            <NextScript />
-          </Layout>
+          <Main />
+          <NextScript />
         </body>
       </Html>
     );

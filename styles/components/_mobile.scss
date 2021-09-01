@@ -102,7 +102,6 @@
 
     h3 {
       font-size: $font-28;
-      justify-content: center;
       width: 100%;
     }
 
@@ -147,12 +146,13 @@
   .categories__container {
     gap: 3em;
     grid-template-columns: auto;
+    min-width: 300px;
+    height: 100%;
   }
 
   .categories__title {
     width: 100%;
     font-size: $font-16;
-    
   }
 
   .post__content {
