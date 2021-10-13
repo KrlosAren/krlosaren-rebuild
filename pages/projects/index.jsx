@@ -7,7 +7,7 @@ import favicon from '/public/favicon.svg';
 export async function getStaticProps(context) {
   const ACCESS_TOKEN =
     'c31abf92fdc196e6ec90890f9c1c1e920abd4d190a1a41199fc7d73e65ac05df';
-  const res = await fetch(`${process.env.NEXT_PUBLIC_API}/api/projects`);
+  const res = await fetch(`https://www.krlosaren.com/api/projects`);
   const dribbbleApi = await fetch(
     `https://api.dribbble.com/v2/user/shots?access_token=${ACCESS_TOKEN}&per_page=34`
   );
