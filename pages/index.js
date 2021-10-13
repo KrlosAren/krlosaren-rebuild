@@ -1,13 +1,10 @@
 import Head from 'next/head';
-import { useContext } from 'react';
 import Header from '../src/components/Header/Header';
 import Me from '../src/components/Me/Me';
 import Prologe from '../src/components/Prologe/Prologe';
-import { UIContext } from '../src/context/UIContext';
+import favicon from '/public/favicon.svg';
 
 export default function Home() {
-  const { uiState } = useContext(UIContext);
-
   return (
     <>
       <Head>
@@ -48,7 +45,7 @@ export default function Home() {
           name='description'
           content='Carlos Lopez portafolio frontend developer and backend developer'
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href={favicon.src} />
       </Head>
       <div id='main__container'>
         <Header />

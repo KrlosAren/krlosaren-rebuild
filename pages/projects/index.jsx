@@ -2,11 +2,12 @@ import Head from 'next/head';
 import Categories from '../../src/components/Categories/Categories';
 import Project from '../../src/components/Project/Project';
 import Spinner from '../../src/components/Spinner/Spinner';
+import favicon from '/public/favicon.svg';
 
 export async function getStaticProps(context) {
   const ACCESS_TOKEN =
     'c31abf92fdc196e6ec90890f9c1c1e920abd4d190a1a41199fc7d73e65ac05df';
-  const res = await fetch(`https://krlosaren-rebuild.vercel.app/api/projects`);
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API}/api/projects`);
   const dribbbleApi = await fetch(
     `https://api.dribbble.com/v2/user/shots?access_token=${ACCESS_TOKEN}&per_page=34`
   );
@@ -76,7 +77,7 @@ const Projects = ({ projects, dribbble }) => {
           name='description'
           content='Carlos Lopez portafolio frontend developer and backend developer'
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href={favicon.src} />
       </Head>
 
       <div id='main__container'>

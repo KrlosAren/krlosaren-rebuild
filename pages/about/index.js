@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import favicon from '/public/favicon.svg';
 
 const About = () => {
   return (
@@ -43,7 +44,7 @@ const About = () => {
           name='description'
           content='Carlos Lopez portafolio frontend developer and backend developer'
         />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href={favicon.src} />
       </Head>
 
       <div id='main__container'>

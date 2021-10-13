@@ -62,7 +62,7 @@ const Menu = ({ isVisible }) => {
               </div>
               <div className='nav__links--item'>
                 <Link href='/projects'>
-                  <a onClick={handleMenuOpen}>Projects</a>
+                  <a onClick={handleMenuOpen}>Proyectos</a>
                 </Link>
                 <span>Algunos proyectos</span>
               </div>
